@@ -2,6 +2,17 @@
 @tailwind components; /* For complex components */
 @tailwind utilities; /* Use this to add utilities that tailwind does not provide by default*/
 
-/* * {
-    font-family: 'Times New Roman', Times, serif;
-} */
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@layer components {
+  .nav-item-hover-line-effect {
+    @apply relative w-fit block after:block after:content-['']
+        after:absolute after:h-[3px] after:bg-green-400
+        after:w-full after:scale-x-0 after:hover:scale-x-100
+        after:transition after:duration-300 after:origin-center;
+  }
+}
