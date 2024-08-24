@@ -48,7 +48,10 @@ const Projects: FC = () => {
       </h1>
 
       {featuredProjects.map((project: IProject) => (
-        <ProjectCard project={project} />
+        <ProjectCard
+          key={project.id}
+          project={project}
+        />
       ))}
     </section>
   );

@@ -3,8 +3,29 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body {
     @apply bg-black text-white;
+    overflow-x: hidden;
+  }
+
+  /* Trying to customize the scrollbar for the entire page */
+  body::-webkit-scrollbar {
+    background: black;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #4ade80;
+    border-radius: 10px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #22c55e;
   }
 }
 
@@ -14,5 +35,10 @@
         after:absolute after:h-[3px] after:bg-green-400
         after:w-full after:scale-x-0 after:hover:scale-x-100
         after:transition after:duration-300 after:origin-center;
+  }
+
+  .contact-input-field {
+    @apply p-3 bg-black outline focus:outline-green-400
+          font-regular mb-4 md:mb-4 text-gray-50 rounded-md;
   }
 }

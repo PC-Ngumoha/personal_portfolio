@@ -8,16 +8,18 @@ import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import Contact from './components/Contact/Contact';
 
 const App: FC = () => {
   return (
-    <main className="px-10 py-4 lg:px-24 lg:py-2">
+    <main className="px-10 p-4 lg:px-24 lg:py-2 scroll-smooth">
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Skills />
       <Experience />
+      <Contact />
     </main>
   );
 };
