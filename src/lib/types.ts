@@ -15,3 +15,12 @@ export interface ISkills {
   icon: IconType;
   tip: string;
 }
+
+export interface IExperience {
+  id: number;
+  title: string;
+  institution: string;
+  start: string;
+  end?: string;
+  description: string;
+}
