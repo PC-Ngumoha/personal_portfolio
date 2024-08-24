@@ -9,28 +9,29 @@ const featuredProjects: IProject[] = [
   {
     id: 1,
     name: 'Budget Tracker',
-    description: 'A simple budget tracker web application',
-    githubUrl: '',
-    liveUrl: '',
-    videoID: '',
+    description: 'A simple budget tracker',
+    githubUrl: 'https://github.com/PC-Ngumoha/personal_budget_tracker',
+    liveUrl:
+      'https://personalbudgettracker-r8eukt96q-pcngumohas-projects.vercel.app/',
+    videoID: '-QC9ct5DB3g',
     technologies: ['HTML', 'CSS', 'JS'],
   },
   {
     id: 2,
     name: 'Trafrica',
     description: 'Travel & Tour famous locations on the African continent',
-    githubUrl: '',
-    liveUrl: '',
-    videoID: '',
+    githubUrl: 'https://github.com/PC-Ngumoha/trafrica',
+    liveUrl: 'https://trafrica.vercel.app/',
+    videoID: 'AGUu_yxFdiU',
     technologies: ['React.js', 'CSS', 'HTML', 'JS'],
   },
   {
     id: 3,
     name: 'Inkspire',
     description: "Get access to the world's knowledge at Inkspire",
-    githubUrl: '',
-    liveUrl: '',
-    videoID: '',
+    githubUrl: 'https://github.com/PC-Ngumoha/inkspire',
+    liveUrl: 'https://inkspire-three.vercel.app/',
+    videoID: 'dymKHLgzDhE',
     technologies: ['HTML', 'CSS', 'JS'],
   },
 ];
@@ -38,6 +39,7 @@ const featuredProjects: IProject[] = [
 const Projects: FC = () => {
   return (
     <section
+      id="projects"
       className="w-full h-fit flex flex-col items-center
     p-2"
     >

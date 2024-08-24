@@ -6,6 +6,7 @@ import './index.css';
 
 // 3rd-party CSS dependency imports
 import 'react-tooltip/dist/react-tooltip.css';
+import 'react-responsive-modal/styles.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
