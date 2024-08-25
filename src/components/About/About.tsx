@@ -1,15 +1,29 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
+import AOS from 'aos';
 
 // Images and other assets
 import me from '../../assets/me.png';
 
 const About: FC = () => {
+  // Setup for the Animate-on-Scroll library
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <section
       className=" h-fit md:h-screen p-4 flex flex-col items-start
     md:items-center md:flex-row lg:items-start"
     >
-      <div className="flex-1">
+      {/* Applying animate on scroll library */}
+      <div
+        className="flex-1"
+        data-aos="zoom-in"
+        data-aos-delay={300}
+        data-aos-easing="ease-in-sine"
+        data-aos-duration={1500}
+      >
         <img
           src={me}
           alt="Image of Prince C. Ngumoha"
@@ -42,20 +56,30 @@ const About: FC = () => {
         </span>
         <div className="mt-5 md:mt-0 flex h-fit flex-row justify-center md:justify-start">
           <a
-            href="#"
+            href="#contact"
             className="block px-3 py-4 mr-6 bg-green-400 w-fit
              h-[100%] text-black font-bold font-regular
              tracking-tight rounded-xl"
+            data-aos="zoom-in-right"
+            data-aos-delay={300}
+            data-aos-easing="ease-in-sine"
+            data-aos-duration={1500}
           >
             Hire Me !!!
           </a>
           <a
-            href="#"
+            href="https://docs.google.com/document/d/1jj6hOtqSLov1DiugJx9UgV6C-AH8uDlLHR5weDSYg4I/edit?usp=sharing"
+            target="_blank"
+            rel="noopener"
             className="block px-3 py-4 bg-transparent w-fit
              h-[100%] text-white font-bold font-regular
              tracking-tight rounded-xl border border-solid border-green-400
              transition-colors duration-700 ease-in-out
              hover:bg-green-400 hover:text-black"
+            data-aos="zoom-in-left"
+            data-aos-delay={300}
+            data-aos-easing="ease-in-sine"
+            data-aos-duration={1500}
           >
             View My C.V
           </a>

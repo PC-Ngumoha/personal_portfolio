@@ -1,5 +1,6 @@
 // external package imports
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
+import AOS from 'aos';
 
 // local package imports
 import ProjectCard from '../ProjectCard/ProjectCard';
@@ -37,11 +38,20 @@ const featuredProjects: IProject[] = [
 ];
 
 const Projects: FC = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <section
       id="projects"
       className="w-full h-fit flex flex-col items-center
     p-2"
+      data-aos="flip-down"
+      data-aos-delay={300}
+      data-aos-easing="ease-in-sine"
+      data-aos-duration={1500}
     >
       <h1 className="font-bold text-2xl mt-5 md:mt-0 md:text-3xl font-quote">
         Projects
@@ -51,6 +61,10 @@ const Projects: FC = () => {
         <ProjectCard
           key={project.id}
           project={project}
+          data-aos="fade-up"
+          data-aos-easing="ease"
+          data-aos-duration={1500}
+          data-aos-anchor-placement="top-bottom"
         />
       ))}
     </section>
