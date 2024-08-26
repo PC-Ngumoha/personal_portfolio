@@ -33,7 +33,7 @@ const featuredProjects: IProject[] = [
     githubUrl: 'https://github.com/PC-Ngumoha/inkspire',
     liveUrl: 'https://inkspire-three.vercel.app/',
     videoID: 'dymKHLgzDhE',
-    technologies: ['HTML', 'CSS', 'JS'],
+    technologies: ['React.js', 'JS', 'SASS', 'HTML'],
   },
 ];
 
