@@ -12,7 +12,10 @@ import Contact from './components/Contact/Contact';
 
 const App: FC = () => {
   return (
-    <main className="px-10 p-4 lg:px-24 lg:py-2 scroll-smooth">
+    <main
+      className="px-10 p-4 lg:px-24 lg:py-2 scroll-smooth
+    w-full overflow-x-hidden"
+    >
       <Navbar />
       <Hero />
       <About />

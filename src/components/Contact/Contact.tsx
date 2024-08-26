@@ -22,7 +22,7 @@ const Contact: FC = () => {
       </div>
       <form
         className="flex-1 flex flex-col justify-around"
-        action="https://formsubmit.co/chukwuemekangumoha@gmail.com"
+        action="https://formsubmit.co/a9c1571d9cadb208dcbb23f9e73387d1"
         method="POST"
         target="_blank"
       >
